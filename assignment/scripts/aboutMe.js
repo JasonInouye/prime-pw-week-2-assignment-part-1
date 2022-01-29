@@ -30,7 +30,7 @@ console.log( food );
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 1;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendspets = 1;
+let friendsPets = 5;
 // 11 - Add two pets to your `pets` variable
 pets += 4;
 console.log( 'Total Pets:', pets );
@@ -78,6 +78,23 @@ else if ( pets > allowedPets ) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
+
+let mostPets = 0;
+if ( pets > friendsPets ) {
+  let mostPets = pets;
+  console.log( 'I have the most Pets with '+mostPets);
+  console.log( 'My friends have '+friendsPets+' pets.');
+}
+else if ( pets < friendsPets ) {
+  let mostPets = friendsPets;
+  console.log( 'My Friends have the most Pets with '+mostPets);
+  console.log( 'I have '+pets+' pets.');
+}
+else if ( pets == friendsPets ) {
+  let mostPets = friendsPets;
+  console.log( 'My Friends and I have the same amount of Pets with '+mostPets);
+  console.log( 'My friends have '+friendsPets+' pets and I have '+pets+' pets');
+}
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
